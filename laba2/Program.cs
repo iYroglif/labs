@@ -10,11 +10,17 @@ namespace laba2
     {
         static void Main(string[] args)
         {
+            Rectangle a = new Rectangle(4, 8);
+            a.Print();
+            Square b = new Square(5.5);
+            b.Print();
+            Circle c = new Circle(3);
+            c.Print();
             Console.ReadKey();
         }
     }
 
-    abstract class GeomFigure /*: IComparable*/
+    abstract class GeomFigure
     {
         string _shape;
         double _area;
@@ -31,17 +37,9 @@ namespace laba2
             protected set { _area = value; }
         }
 
-        public abstract double CalcArea();
+        public abstract double CalcArea(); //Смысл делать virtual?
 
-        /*public int CompareTo(object o)
-        {
-            GeomFigure a = (GeomFigure)o;
-            if (_area < a._area) return -1;
-            else if (_area == a._area) return 0;
-            else return 1;
-        }*/
-
-        public virtual string ToString() { return _shape + " плошадью " + _area.ToString(); }
+        public virtual string ToString() { return _shape + " площадью " + _area.ToString(); }
     }
 
     interface IPrint { void Print(); }
@@ -60,7 +58,7 @@ namespace laba2
             get { return _height; }
             private set
             {
-                if (value < 0) { throw new Exception /*Console.WriteLine*/("Высота не может быть отрицателной"); }
+                if (value < 0) { throw new Exception /*Console.WriteLine*/("Высота не может быть отрицательной"); }
                 else { _height = value; }
             }
         }
@@ -70,7 +68,7 @@ namespace laba2
             get { return _weight; }
             private set
             {
-                if (value < 0) { throw new Exception /*Console.WriteLine*/("Ширина не может быть отрицателной"); }
+                if (value < 0) { throw new Exception /*Console.WriteLine*/("Ширина не может быть отрицательной"); }
                 else { _weight = value; }
             }
         }
@@ -91,7 +89,7 @@ namespace laba2
     {
         public Square(double leng) : base(leng, leng) { Shape = "Квадрат"; }
 
-        public override string ToString() { return base.ToString() + " и стороной " + Height; } //Как обратиться к самому родительскому классу?
+        public override string ToString() { return base.ToString() + " и стороной " + Height; } //Как обратиться к сАмому родительскому классу?
     }
 
     class Circle : GeomFigure, IPrint
@@ -107,7 +105,7 @@ namespace laba2
             get { return _radius; }
             private set
             {
-                if (value < 0) { throw new Exception/*Console.WriteLine*/("Радиус не может быть отрицателной"); }
+                if (value < 0) { throw new Exception/*Console.WriteLine*/("Радиус не может быть отрицательным"); }
                 else { _radius = value; }
             }
         }
