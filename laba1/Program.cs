@@ -53,7 +53,8 @@ namespace laba1
                             Console.ResetColor();
                             c = ReadCoefficient("c");
                         }
-                    } else
+                    }
+                    else
                     {
                         c = ReadCoefficient("c");
                     }

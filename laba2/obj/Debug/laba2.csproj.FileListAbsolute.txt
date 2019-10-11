@@ -2,6 +2,5 @@ C:\Users\webma\source\repos\laba1\laba2\bin\Debug\laba2.exe.config
 C:\Users\webma\source\repos\laba1\laba2\bin\Debug\laba2.exe
 C:\Users\webma\source\repos\laba1\laba2\bin\Debug\laba2.pdb
 C:\Users\webma\source\repos\laba1\laba2\obj\Debug\laba2.csprojAssemblyReference.cache
-C:\Users\webma\source\repos\laba1\laba2\obj\Debug\laba2.csproj.CoreCompileInputs.cache
 C:\Users\webma\source\repos\laba1\laba2\obj\Debug\laba2.exe
 C:\Users\webma\source\repos\laba1\laba2\obj\Debug\laba2.pdb
