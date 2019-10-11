@@ -13,7 +13,7 @@ namespace laba1
             Console.Title = "Терентьев Владислав ИУ5-33";
             double a, b, c = 0, D;
             string ext;
-            int i = 0, j = 0;
+            int i = 0;
             if (args.Length == 0)
             {
                 i = 1;
@@ -25,26 +25,37 @@ namespace laba1
                 {
                     if (!double.TryParse(args[0], out a))
                     {
-                        j = 1;
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("Проверьте правильность данных и попробуйте снова.");
+                        Console.ResetColor();
+                        a = ReadCoefficient("a");
                     }
                     if (args.Length > 1)
                     {
                         if (!double.TryParse(args[1], out b))
                         {
-                            j = 1;
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("Проверьте правильность данных и попробуйте снова.");
+                            Console.ResetColor();
+                            b = ReadCoefficient("b");
                         }
                     }
                     else
                     {
-                        b = 0;
-                        c = 0;
+                        b = ReadCoefficient("b");
                     }
                     if (args.Length > 2)
                     {
                         if (!double.TryParse(args[2], out c))
                         {
-                            j = 1;
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("Проверьте правильность данных и попробуйте снова.");
+                            Console.ResetColor();
+                            c = ReadCoefficient("c");
                         }
+                    } else
+                    {
+                        c = ReadCoefficient("c");
                     }
                 }
                 else
@@ -65,7 +76,7 @@ namespace laba1
                 {
                     c = ReadCoefficient("c");
                 }
-                if ((a == 0 && b == 0) || j == 1)
+                if (a == 0 && b == 0)
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Вы ввели не уравнение.");
@@ -205,7 +216,6 @@ namespace laba1
                         }
                     } while (ext != "да" && ext != "нет");
                 }
-                j = 0;
                 i = 1;
             } while (ext != "да");
         }

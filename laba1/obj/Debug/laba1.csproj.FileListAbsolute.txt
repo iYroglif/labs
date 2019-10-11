@@ -1,4 +1,3 @@
-C:\Users\webma\source\repos\laba1\laba1\obj\Debug\laba1.csproj.CoreCompileInputs.cache
 C:\Users\webma\source\repos\laba1\laba1\bin\Debug\laba1.exe.config
 C:\Users\webma\source\repos\laba1\laba1\bin\Debug\laba1.exe
 C:\Users\webma\source\repos\laba1\laba1\bin\Debug\laba1.pdb

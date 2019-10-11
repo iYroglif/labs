@@ -1,0 +1,6 @@
+C:\Users\webma\source\repos\laba1\laba3\bin\Debug\laba3.exe.config
+C:\Users\webma\source\repos\laba1\laba3\bin\Debug\laba3.exe
+C:\Users\webma\source\repos\laba1\laba3\bin\Debug\laba3.pdb
+C:\Users\webma\source\repos\laba1\laba3\obj\Debug\laba3.csprojAssemblyReference.cache
+C:\Users\webma\source\repos\laba1\laba3\obj\Debug\laba3.exe
+C:\Users\webma\source\repos\laba1\laba3\obj\Debug\laba3.pdb
